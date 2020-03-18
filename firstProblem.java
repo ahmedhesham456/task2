@@ -6,7 +6,7 @@ public class firstProblem {
 		// TODO Auto-generated method stub
 //declaring variables and inputs
 Scanner input = new Scanner(System.in);
-int [] arr1 = {2,5,6,9} , arr2 = {2,6,9,13};
+int [] arr1 = {3,5,8,13} , arr2 = {2,6,9,13};
 int i = 0,j = 0 ,arrLenght = 3;
 int [] arr3 = new int[8];
 System.out.print("resulted array =");
@@ -15,14 +15,15 @@ while(j<=arrLenght) {
 	if(arr1[i] <= arr2[i]) {
 		arr3[i] = arr1[i];
 		arr3[i+1] = arr2[i];
+		System.out.print(arr3[i]+ "," + arr3[i+1] + ",");
 	    i++;
     }
     else {
 	   arr3[i] = arr2[i];
 	   arr3[i+1] = arr1[i];
+	   System.out.print(arr3[i] + "," + arr3[i+1] + ",");
 	   i++;
     }
-System.out.print(arr3[i] + ",");
 j++;		
 }
 	}
